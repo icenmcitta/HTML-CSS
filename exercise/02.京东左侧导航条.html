@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* .list{
+            font-size: 20px;
+        }
+        .list li{
+            margin-bottom: 10px;
+        } */
+        body{
+            background-color: #bfa;
+        }
+        .left-nav{
+            width: 190px;
+            height: 450px;
+            padding: 10px 0;
+            background-color: #fff;
+        }
+        .left-nav .item{
+            height: 25px;
+            /* 要让文字在父元素中垂直居中，只需将父元素的line-height设置为一个和父元素height一样的值即可 */
+            line-height: 25px;
+            /* 设置item的右内边距，将文字向内移动 */
+            padding-left: 18px;
+            font-size: 12px;
+        }
+        /* 为item设置一个鼠标移入的状态 */
+        .item:hover{
+            background-color: #D9D9D9;
+        }
+        .item a{
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 设置字体的颜色 */
+            color: black;
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+        /* 设置超链接的hover的样式 */
+        .item a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设置一个外部容器 nav(div)  div(div)  ul(li) -->
+    <nav class="left-nav">
+        <div class="item">
+            <a href="#">家用电器</a>
+        </div>
+
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+        <div class="item">
+            <a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a>
+        </div>
+    </nav>
+    <!-- <ul class="list">
+        <li>
+            <a href="javascript:;">家用电器</a>
+        </li>
+        <li>
+            <a href="javascript:;">手机</a>
+            <span>/</span>
+            <a href="javascript:;">运营商</a>
+            <span>/</span>
+            <a href="javascript:;">数码</a>
+        </li>
+        <li>
+            <a href="javascript:;">电脑</a>
+            <span>/</span>
+            <a href="javascript:;">办公</a>
+        </li>
+        <li>
+            <a href="javascript:;">家居</a>
+            <span>/</span>
+            <a href="javascript:;">家具</a>
+            <span>/</span>
+            <a href="javascript:;">家装</a>
+            <span>/</span>
+            <a href="javascript:;">厨具</a>
+        </li>
+        <li>
+            <a href="javascript:;">男装</a>
+            <span>/</span>
+            <a href="javascript:;">女装</a>
+            <span>/</span>
+            <a href="javascript:;">童装</a>
+            <span>/</span>
+            <a href="javascript:;">内衣</a>
+        </li>
+        <li>
+            <a href="javascript:;">美妆</a>
+            <span>/</span>
+            <a href="javascript:;">个护清洁</a>
+            <span>/</span>
+            <a href="javascript:;">宠物</a>
+        </li>
+        <li>
+            <a href="javascript:;">女鞋</a>
+            <span>/</span>
+            <a href="javascript:;">箱包</a>
+            <span>/</span>
+            <a href="javascript:;">钟表</a>
+            <span>/</span>
+            <a href="javascript:;">珠宝</a>
+        </li>
+        <li>
+            <a href="javascript:;">男鞋</a>
+            <span>/</span>
+            <a href="javascript:;">运动</a>
+            <span>/</span>
+            <a href="javascript:;">户外</a>
+        </li>
+        <li>
+            <a href="javascript:;">房产</a>
+            <span>/</span>
+            <a href="javascript:;">汽车</a>
+            <span>/</span>
+            <a href="javascript:;">汽车用品</a>
+        </li>
+        <li>
+            <a href="javascript:;">母婴</a>
+            <span>/</span>
+            <a href="javascript:;">玩具乐器</a>
+        </li>
+        <li>
+            <a href="javascript:;">食品</a>
+            <span>/</span>
+            <a href="javascript:;">酒类</a>
+            <span>/</span>
+            <a href="javascript:;">生鲜</a>
+            <span>/</span>
+            <a href="javascript:;">特产</a>
+        </li>
+        <li>
+            <a href="javascript:;">艺术</a>
+            <span>/</span>
+            <a href="javascript:;">礼品鲜花</a>
+            <span>/</span>
+            <a href="javascript:;">农资绿植</a>
+        </li>
+        <li>
+            <a href="javascript:;">医药保健</a>
+            <span>/</span>
+            <a href="javascript:;">计生情趣</a>
+        </li>
+        <li>
+            <a href="javascript:;">图书</a>
+            <span>/</span>
+            <a href="javascript:;">文娱</a>
+            <span>/</span>
+            <a href="javascript:;">教育</a>
+            <span>/</span>
+            <a href="javascript:;">电子书</a>
+        </li>
+        <li>
+            <a href="javascript:;">机票</a>
+            <span>/</span>
+            <a href="javascript:;">酒店</a>
+            <span>/</span>
+            <a href="javascript:;">旅游</a>
+            <span>/</span>
+            <a href="javascript:;">生活</a>
+        </li>
+        <li>
+            <a href="javascript:;">理财</a>
+            <span>/</span>
+            <a href="javascript:;">众筹</a>
+            <span>/</span>
+            <a href="javascript:;">白条</a>
+            <span>/</span>
+            <a href="javascript:;">特保险</a>
+        </li>
+        <li>
+            <a href="javascript:;">安装</a>
+            <span>/</span>
+            <a href="javascript:;">维修</a>
+            <span>/</span>
+            <a href="javascript:;">清洗</a>
+            <span>/</span>
+            <a href="javascript:;">二手</a>
+        </li>
+        <li>
+            <a href="javascript:;">工业品</a>
+        </li>
+    </ul> -->
+</body>
+</html>

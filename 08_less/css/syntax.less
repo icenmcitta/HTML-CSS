@@ -1,0 +1,42 @@
+.box1{
+    background-color: #bfa;
+    .box2{
+        background-color: #ff0;
+        .box4{
+            color: red;
+        }
+    }
+    .box3{
+        background-color: orange;
+    }
+}
+
+@a:100px;
+@b:#bfa;
+@c:box6;
+
+.box5{
+    width: @a;
+    color:@b;
+}
+
+.@{c}{
+    width: @a;
+    background-image: url("@{c}/1.png");
+}
+
+@d:200px;
+@d:300px;
+
+div{
+    @d:115px;
+    width: @d;
+    height: @e;
+}
+
+@e:335px;
+
+div{
+    width: 300px;
+    height: $width;
+}

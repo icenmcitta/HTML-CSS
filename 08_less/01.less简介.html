@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            --color:#bfa;
+            --length:100px;
+        }
+        .box1{
+            /* calc()计算函数，兼容性不好 */
+            /* width: calc(200px*2); */
+            width: 100px;
+            /* width: var(--length) */
+            height: 100px;
+            background-color: var(--color);
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            color: var(--color);
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            border: 1px solid var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">aaa</div>
+    <div class="box2">aaa</div>
+    <div class="box3">aaa</div>
+</body>
+</html>

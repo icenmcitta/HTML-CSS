@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 800px;
+            border: 10px solid red;
+            display: flex;
+            /* flex-direction: column; */
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            /* display: flex; */
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+        li:nth-child(2){
+            background-color: pink;
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+        li:nth-child(3){
+            background-color: orange;
+            /* flex-grow: 3; */
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1
+            <div></div>
+        </li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

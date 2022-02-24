@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box1{ */
+            /* width: 500px;
+            height: 500px;
+            overflow: auto;
+            background-color: #bfa;
+            background-image: url("./img/2.jpg");
+            background-repeat: no-repeat;
+            padding: 10px; */
+            /* background-position: top left; */
+            /* background-position: 100px 100px; */
+            /* border: 10px double red; */
+            /* background-clip: content-box;
+            background-origin: padding-box; */
+            /* background-size: 300px 400px; */
+            /* background-size: contain; */
+        /* } */
+        /* .box2{
+            width: 300px;
+            height: 1000px;
+            background-color: orange;
+            background-image: url(./img/1.png);
+            background-repeat: no-repeat;
+            background-position: 100px 100px;
+            background-attachment: fixed;
+        } */
+        .box3{
+            width: 500px;
+            height: 500px;
+            background: #bfa url("./img/2.jpg") center center/contain border-box no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+</html>
